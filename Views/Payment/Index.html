@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="col-lg-12" id="pnData">
+        <div class="xit-table">
+            <table id="tPayments" class="table table-bordered table-hover">
+                <caption class="text-center">
+                    <p> Powered by <a href="https://api.calista.co.ke/xit/documentation/tables/v1"
+                            target="_blank">Calista</a> </p>
+                </caption>
+                <thead>
+                    <tr>
+                        <th sort="true">Id</th>
+                        <th>Amount</th>
+                        <th sort="true">Doc No</th>
+                        <th sort="true">Created On</th>
+                        <th>Transaction Code</th>
+                    </tr>
+                </thead>
+                <tbody id="tbPayments">
+
+                </tbody>
+                <tfoot>
+
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</div>
+<script src="Controllers/PaymentController.js"></script>
+<script lang="javascript">
+    $(document).ready(function () {
+        PaymentController.fetch({
+            crId:JSON.parse(xit.storage.getValue('loggedInUser')).id
+        })
+    })
+</script>

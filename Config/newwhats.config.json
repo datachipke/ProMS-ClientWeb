@@ -1,0 +1,7 @@
+[
+    {
+        "label":"Make Advance Payment",
+        "image":"https://icon-library.net/images/appointment-icon-png/appointment-icon-png-29.jpg",
+        "view":"Views/Payment/New.html|popUp"
+    }
+]
