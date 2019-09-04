@@ -1,6 +1,7 @@
 baseurl = {
     url: 'http://154.70.32.171:99/api/',
 }
+
 endpoints = {
     auth: {
         signIn: baseurl.url + 'auth/signIn.aspx',
